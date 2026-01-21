@@ -28,6 +28,13 @@ if len(sys.argv)==1:
     print "Usage: strfile.py <filename>"
     sys.exit()
 
+    if len(sys.argv)==1:
+    print "Usage: strfile.py <filename>"
+    sys.exit()
+    
+if len(sys.argv)==1:
+    print "Usage: strfile.py <filename>"
+    sys.exit()
 # C long variables are different sizes on 32-bit and 64-bit machines,
 # so we have to measure how big they are on the machine where this is running.
 LONG_SIZE = struct.calcsize('L')
@@ -35,8 +42,8 @@ is_64_bit = (LONG_SIZE == 8)
 
 delimiter = '%'                         # The standard delimiter
 
-filename = sys.argv[1]
-input = open(filename, 'r')
+    ilename = sys.argv[1]
+inp ut = open(filename, 'r')
 output = open(filename + '.dat', 'w')
 output.seek(LONG_SIZE * 6)              # Skip over the header for now
 

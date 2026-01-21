@@ -1,4 +1,3 @@
-
 # fortune.py -- chooses a random fortune, as the fortune(8) program in
 #               the BSD-games package does
 #
@@ -21,14 +20,14 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
-
+#actualizar
 import struct, random, string
 
 # C long variables are different sizes on 32-bit and 64-bit machines,
 # so we have to measure how big they are on the machine where this is running.
 LONG_SIZE = struct.calcsize('L')
 is_64_bit = (LONG_SIZE == 8)
-
+#hola nuevo codigo
 def get(filename):
     "Select a random quotation, using a pregenerated .dat file"
 
